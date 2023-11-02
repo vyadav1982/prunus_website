@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Prunus Pharma
+  site: 'https://www.prunusafrica.com'
   base: '/'
   trailingSlash: false
 
@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Prunus Pharma
+    template: '%s — Prunus'
+  description: 'Prunus Pharma is a Kenya based pharma company. We are one of the top importers, distributor and wholesaler of pharma goods.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Prunus Pharma
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@prunus'
+    site: '@prunus'
     cardType: summary_large_image
 
 i18n:
@@ -66,7 +66,7 @@ analytics:
       id: null # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'dark:only' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
   tokens:
     default:

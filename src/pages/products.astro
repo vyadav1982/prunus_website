@@ -1,0 +1,116 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Headline from '~/components/ui/Headline.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import { products } from '~/products';
+const metadata = {
+  title: 'Products | Products from Top Pharmaceutical',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Products"
+    title="Quality Pharmaceutical Products from Top Manufacturers."
+    subtitle="We provide high quality generic and branded medicines at affordable costs to patients and doctors. Our products have the hallmark of technology-based differentiation and cover the full range of dosage forms, including tablets, capsules, injectables, inhalers, ointments, creams and liquids. The therapeutic segments covered by our portfolio of over 100 specialized molecules include psychiatry, anti-infectives, neurology, cardiology, orthopaedic, diabetology, gastroenterology, ophthalmology, nephrology, urology, dermatology, gynaecology, respiratory, oncology, dental and nutritionals."
+    image={{
+      src: '~/assets/images/heroimg.png',
+      alt: 'Prunus Hero Image',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Explore our diverse product range"
+    subtitle="Discover our products for every need."
+    columns={3}
+    items={[
+      {
+        title: 'Generics',
+        description:
+          'We have played an effective role in reducing the disease burden across key therapy areas by providing access to affordable mission-critical medicines. In Kenya, more than 70% of our products rank amongst the top three products in their respective segments. Going beyond the pill, our numerous patient-centric initiatives are aimed at patient education, disease awareness, and easy disease monitoring and management.',
+        icon: 'tabler:school',
+      },
+
+      {
+        title: 'Specialty Drugs',
+        description:
+          'The changing landscape of patient needs and disease complexity offers opportunities for special branded medication in specific therapy areas. We have identified women’s health and wellness in Kenya and rare diseases in the East African region as core focus areas for our specialty strategy. We continue working towards expanding the reach of our existing products and adding more specialty products to our portfolio.',
+        icon: 'tabler:article',
+      },
+      {
+        title: 'Over-the-Counter',
+        description:
+          'Our OTC divisions across the East Africa are committed to bringing value-based offerings to meet consumer demands and enhance their quality of life. Backed by a robust distribution network, we offer both Rx-to-OTC and direct OTC products to address growing consumer needs. From bowel regulators and intimate hygiene solutions for women, to health supplements for men and a range of personal sanitisation products, our portfolio comprises a variety of differentiated products.',
+        icon: 'tabler:vaccine',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <!-- <Content
+    isReversed
+    items={[
+      {
+        title: 'High-Quality Designs',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Customization Tools',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Pre-Designed Elements',
+        icon: 'tabler:presentation',
+      },
+      {
+        title: 'Preview and Mockup Views',
+        icon: 'tabler:carousel-horizontal',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Categories</h3>
+    </Fragment>
+  </Content> -->
+
+  <Headline title="All Products" subtitle="Contact Us For Full Product Range" classes={{ container: 'md:mb-0' }} />
+
+  <section class="flex items-center h-full p-16 pt-0">
+    <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
+      <table
+        class="w-full text-sm text-left rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-separate border-[#ffffff29] bg-white dark:bg-slate-900"
+      >
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-slate-900 dark:text-white">
+          <tr>
+            <th scope="col" class="px-6 py-3"> Brand name</th>
+            <th scope="col" class="px-6 py-3"> Generic Name</th>
+            <th scope="col" class="px-6 py-3"> Form</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            products.map(({ brand, generic, form }) => (
+              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  {brand}
+                </th>
+                <td class="px-6 py-4"> {generic} </td>
+                <td class="px-6 py-4"> {form} </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Layout>

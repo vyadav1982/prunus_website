@@ -1,0 +1,16 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import ImageGrid from '~/components/common/ImageGrid.astro';
+import { galleryImages } from '~/gallery';
+const metadata = {
+  title: 'Photo Gallery of Pharma Warehouse',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText tagline="A Peek at Our Storage Facility" title="Photo Gallery" />
+  <ImageGrid images={galleryImages} />
+</Layout>

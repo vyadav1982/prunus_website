@@ -83,7 +83,7 @@ export interface MetaDataTwitter {
   cardType?: string;
 }
 
-export interface Image {
+export interface ImageType {
   src: string;
   alt?: string;
 }
