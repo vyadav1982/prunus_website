@@ -3,41 +3,76 @@ import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Contact Us | Mail | Phone no',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <HeroText tagline="Contact Prunus" title="Let's Connect!" />
 
-  <ContactUs
-    title="Drop us a message today!"
-    subtitle="Interested in working with Most Reliable Pharmaceutical Distributor in Kenya.<br>Drop us a line."
-    inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
-      },
-    ]}
-    textarea={{
-      label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
-    description="Our support team typically responds within 24 business hours."
-  />
+  <Content id="locate us on map" columns={3}>
+    <Fragment slot="image">
+      <h2
+        class="text-center font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl -mt-10"
+      >
+        Locate us!
+      </h2>
+      <p class="mt-4 mb-12 text-muted text-xl text-center">
+        Want to discuss business with us over a cup of coffee.
+        <br />Drop by any weekday Between 8 AM to 5 PM.
+        <br /> Closed on Sundays and public holidays.
+      </p>
+
+      <div class="relative">
+        <iframe
+          class="rounded-lg"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.859690478614!2d36.9014407!3d-1.3475259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0da70b3e8dc7%3A0x1e606e70b3045af0!2sPrunus%20Pharma%20Ltd!5e0!3m2!1sen!2sgh!4v1698956108565!5m2!1sen!2sgh"
+          width="600"
+          height="600"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </Fragment>
+
+    <Fragment slot="content">
+      <ContactUs
+        title="Drop us a message today!"
+        subtitle="Interested in working with Most Reliable Pharmaceutical Distributor in Kenya.<br>Drop us a line."
+        inputs={[
+          {
+            type: 'text',
+            name: 'name',
+            label: 'Name',
+          },
+          {
+            type: 'email',
+            name: 'email',
+            label: 'Email',
+          },
+        ]}
+        textarea={{
+          label: 'Message',
+        }}
+        disclaimer={{
+          label:
+            'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+        }}
+        description="Our support team typically responds within 24 business hours."
+      />
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
 
   <!-- Features2 Widget ************** -->
 
