@@ -7,6 +7,7 @@ tags:
   - pharma-blogs
   - kenya
   - Erectile Dysfunction
+category: Product Information
 ---
 
 ## Product Information - Comit

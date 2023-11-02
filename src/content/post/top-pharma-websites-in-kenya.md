@@ -8,6 +8,7 @@ tags:
   - import
   - export
   - pharma industry links in kenya
+category: Pharma Industry in Kenya
 ---
 
 ## Most Important Pharma websites for Kenya

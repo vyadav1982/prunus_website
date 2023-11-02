@@ -23,8 +23,8 @@ metadata:
         height: 628
     type: website
   twitter:
-    handle: '@prunus'
-    site: '@prunus'
+    handle: '@prunuspharma'
+    site: '@prunuspharma'
     cardType: summary_large_image
 
 i18n:
@@ -63,7 +63,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: UA-248360498-1 # or "G-XXXXXXXXXX"
 
 ui:
   theme: 'dark:only' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

@@ -7,6 +7,7 @@ tags:
   - pharma-blogs
   - pessaries
   - glycerin
+category: Product Information
 ---
 
 <div class="text-justify">

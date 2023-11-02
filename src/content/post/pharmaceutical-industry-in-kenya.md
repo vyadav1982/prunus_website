@@ -7,6 +7,7 @@ tags:
   - pharma-blogs
   - pharma industry
   - kenya
+category: Pharma Industry in Kenya
 ---
 
 ## Overview
