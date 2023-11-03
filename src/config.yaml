@@ -4,8 +4,6 @@ site:
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
-
 # Default SEO metadata
 metadata:
   title:
@@ -64,6 +62,7 @@ analytics:
   vendors:
     googleAnalytics:
       id: UA-248360498-1 # or "G-XXXXXXXXXX"
+      partytown: false
 
 ui:
   theme: 'dark:only' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
