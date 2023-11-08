@@ -1,5 +1,6 @@
 ---
 publishDate: 2023-08-25T00:00:00Z
+author: Prunus Pharma
 title: 'All About Pessaries'
 excerpt: A pessary is a device that is inserted into the vagina to support the uterus or cervix, or to treat certain medical conditions. Pessaries can be made of various materials, including silicone, rubber, or plastic, and come in a range of shapes and sizes.
 image: ~/assets/images/blogs/What are pessaries.jpg

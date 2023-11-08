@@ -31,6 +31,14 @@ export default defineConfig({
 
   output: 'static',
 
+  redirects: {
+    '/2022/12/02/how-to-export-pharma-products-to-kenya': '/how-to-export-pharma-products-to-kenya',
+    '/category/pharma-blogs': '/tag/pharma-blogs',
+    '/blogs': '/blog',
+    '/2022/11/10/lonart-fighting-malaria-in-kenya/': '/lonart-fighting-malaria-in-kenya',
+    '/author/prunus-pharma': '/blog',
+  },
+
   integrations: [
     tailwind({
       applyBaseStyles: false,
