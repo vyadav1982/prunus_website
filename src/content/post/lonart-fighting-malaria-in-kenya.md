@@ -6,8 +6,9 @@ excerpt: Lonart is used for the treatment of malaria in both children and adults
 image: ~/assets/images/blogs/lonart if effective for malaria.jpg
 tags:
   - pharma-blogs
-  - pessaries
-  - glycerin
+  - artemether lumefantrine
+  - fight against malaria
+  - Biggest brand against malaria in Africa
 category: Product Information
 ---
 
