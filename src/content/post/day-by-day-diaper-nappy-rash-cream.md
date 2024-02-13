@@ -53,6 +53,7 @@ Diaper rash is very common. More than half of babies between 4 and 15 months of 
 - bath your baby daily
 
 **What not to do**
+
 You may see diaper rash remedies on the internet that include using household ingredients such as baking soda or cornstarch. But you want to be careful what you put on your baby’s broken skin. Stick with store-bought diaper rash creams like Day by Day Nappy Rash Cream to get rid of diaper rash.
 
 - do not use soaps, or bubble bath as they can irritate the skin
@@ -60,6 +61,7 @@ You may see diaper rash remedies on the internet that include using household in
 - do not use talcum powder or antiseptics on nappy rash without prescription from doctor
 
 **Directions for user**
+
 Apply a thin layer of Day by Day Nappy Rash Cream on clean and dry skin during each diaper change. Gently spread the cream over the affected area, ensuring complete coverage. Use as often as needed, especially at bedtime, for maximum protection and relief.
 
 It is important to follow the instructions for use provided by your healthcare provider and to have regular check-ups to ensure that right product is being used and at required frequency.
@@ -74,9 +76,11 @@ It is important to follow the instructions for use provided by your healthcare p
 - Discontinue use if skin irritation occurs
 
 **How often should the cream be applied?**
+
 The cream can be reapplied every 4-6 hours.
 
 **See a health visitor or GP**
+
 Diaper rash is the most common skin condition in babies. To prevent it, make sure to keep your baby clean and dry, and change their diaper frequently. Young infants have very delicate skin. Despite your best efforts, chances are that your baby will end up with diaper rash at least once. Fortunately, home treatment with Day by Day Nappy Rash Cream should clear it up within a few days. If it’s not going away, contact your baby’s healthcare provider for medical care.
 
 - your baby's nappy rash does not go away, gets worse or spreads to other areas
