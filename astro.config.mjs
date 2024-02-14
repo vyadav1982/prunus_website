@@ -1,7 +1,7 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { defineConfig } from 'astro/config';
+import { defineConfig, squooshImageService } from 'astro/config';
 
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
@@ -11,7 +11,7 @@ import compress from 'astro-compress';
 import icon from 'astro-icon';
 import tasks from './src/utils/tasks';
 
-import { readingTimeRemarkPlugin } from './src/utils/frontmatter.mjs';
+import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/utils/frontmatter.mjs';
 
 import { ANALYTICS, SITE } from './src/utils/config.ts';
 
@@ -68,22 +68,29 @@ export default defineConfig({
       })
     ),
 
-    tasks(),
-
     compress({
       CSS: true,
       HTML: {
-        removeAttributeQuotes: false,
+        'html-minifier-terser': {
+          removeAttributeQuotes: false,
+        },
       },
       Image: false,
       JavaScript: true,
-      SVG: true,
+      SVG: false,
       Logger: 1,
     }),
+
+    tasks(),
   ],
+
+  image: {
+    service: squooshImageService(),
+  },
 
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin],
+    rehypePlugins: [responsiveTablesRehypePlugin],
   },
 
   vite: {

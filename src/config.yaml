@@ -57,6 +57,8 @@ apps:
       pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
       robots:
         index: false
+    isRelatedPostsEnabled: true
+    relatedPostsCount: 4
 
 analytics:
   vendors:
