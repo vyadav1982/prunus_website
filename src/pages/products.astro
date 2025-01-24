@@ -4,6 +4,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Headline from '~/components/ui/Headline.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import { products } from '~/products';
+import Features3 from '~/components/widgets/Features3.astro';
 const metadata = {
   title: 'Products | Products from Top Pharmaceutical',
 };
@@ -14,13 +15,86 @@ const metadata = {
 
   <Hero
     tagline="Products"
-    title="Quality Pharmaceutical Products from Top Manufacturers."
-    subtitle="We provide high quality generic and branded medicines at affordable costs to patients and doctors. Our products have the hallmark of technology-based differentiation and cover the full range of dosage forms, including tablets, capsules, injectables, inhalers, ointments, creams and liquids. The therapeutic segments covered by our portfolio of over 100 specialized molecules include psychiatry, anti-infectives, neurology, cardiology, orthopaedic, diabetology, gastroenterology, ophthalmology, nephrology, urology, dermatology, gynaecology, respiratory, oncology, dental and nutritionals."
+    title="High-Quality Pharmaceutical Products from Top Manufacturers"
+    subtitle="Generic and branded medicines"
     image={{
       src: '~/assets/images/heroimg.png',
       alt: 'Prunus Hero Image',
     }}
-  />
+  >
+    <Fragment slot="content">
+      <p>
+        At Prunus Pharma, we deliver affordable generic and branded medicines to meet the needs of patients and doctors.
+        Our portfolio includes over 100 specialized molecules backed by technology-driven differentiation, ensuring
+        high-quality healthcare solutions.
+        <br />
+
+        We offer a full range of dosage forms, including tablets, capsules, injectables, inhalers, ointments, creams,
+        and liquids. Our comprehensive therapeutic coverage spans key areas such as:
+      </p>
+      <Features3
+        title="Segments"
+        columns={3}
+        defaultIcon="tabler:point-filled"
+        items={[
+          {
+            title: 'Anti-malarials',
+          },
+          {
+            title: 'Anti-infectives',
+          },
+          {
+            title: 'Gynaecology',
+          },
+          {
+            title: 'Paediatrics',
+          },
+          {
+            title: 'Psychiatry',
+          },
+          {
+            title: 'Neurology',
+          },
+          {
+            title: 'Cardiology',
+          },
+          {
+            title: 'Orthopaedics',
+          },
+          {
+            title: 'Diabetology',
+          },
+          {
+            title: 'Gastroenterology',
+          },
+          {
+            title: 'Ophthalmology',
+          },
+          {
+            title: 'Nephrology',
+          },
+          {
+            title: 'Urology',
+          },
+          {
+            title: 'Dermatology',
+          },
+          {
+            title: 'Respiratory care',
+          },
+          {
+            title: 'Oncology',
+          },
+          {
+            title: 'Dental care',
+          },
+          {
+            title: 'Nutritionals',
+          },
+        ]}
+      />
+    </Fragment>
+  </Hero>
 
   <!-- Features2 Widget ************** -->
 
@@ -50,38 +124,6 @@ const metadata = {
       },
     ]}
   />
-
-  <!-- Content Widget **************** -->
-
-  <!-- <Content
-    isReversed
-    items={[
-      {
-        title: 'High-Quality Designs',
-        icon: 'tabler:wand',
-      },
-      {
-        title: 'Customization Tools',
-        icon: 'tabler:settings',
-      },
-      {
-        title: 'Pre-Designed Elements',
-        icon: 'tabler:presentation',
-      },
-      {
-        title: 'Preview and Mockup Views',
-        icon: 'tabler:carousel-horizontal',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Categories</h3>
-    </Fragment>
-  </Content> -->
 
   <Headline title="All Products" subtitle="Contact Us For Full Product Range" classes={{ container: 'md:mb-0' }} />
 

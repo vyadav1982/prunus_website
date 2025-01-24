@@ -11,7 +11,7 @@ metadata:
   title:
     default: Prunus Pharma
     template: '%s — Prunus'
-  description: 'Prunus Pharma is a Kenya based pharma company. We are one of the top importers, distributor and wholesaler of pharma goods.'
+  description: 'Prunus Pharma is a trusted Kenya-based pharmaceutical company, recognized as one of the top importers, distributors, and wholesalers of high-quality pharma products. With a focus on delivering excellence in the pharmaceutical supply chain, we cater to the healthcare needs of Kenya and East Africa.'
   robots:
     index: true
     follow: true

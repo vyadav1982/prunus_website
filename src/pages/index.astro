@@ -3,10 +3,11 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
+// import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
 
 const metadata = {
   title: 'Prunus  | Pharma importer, distributor and wholesaler in Kenya',
@@ -24,7 +25,7 @@ const metadata = {
       </span>
     </Fragment>
 
-    <Fragment slot="subtitle">
+    <Fragment slot="content">
       <span class="hidden sm:inline">
         <span class="font-semibold">Prunus</span> Pharma is
       </span>
@@ -33,6 +34,17 @@ const metadata = {
       and wholesale of pharmaceutical products in Kenya. <span class="hidden"
         >As international branded pharmaceutical distributor in Kenya,
       </span> We are operating across Kenya in branded and branded-generic pharmaceuticals.
+    </Fragment>
+
+    <Fragment slot="content">
+      <p>
+        Our products are available across Kenya through a reliable network of distributors strategically located in all
+        counties and major cities & towns. This comprehensive distribution network ensures timely availability and
+        accessibility of our products countrywide. The strong demand for our products is driven by an experienced,
+        technology-enabled and dedicated marketing team, ensuring consistent growth and customer satisfaction.
+        <br />
+        Our Customers trust our efficient distribution system to meet the needs of healthcare providers and customers nationwide.
+      </p>
     </Fragment>
   </Hero>
 
@@ -63,18 +75,24 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Fulfilling Pharmaceutical Needs
+        Leading Supplier of Pharmaceuticals in Kenya and East Africa
       </h3>
       <p class="text-justify">
-        Prunus Pharma is always on the look out to provide its customers with quality pharmaceuticals at the most
-        competitive price. As being one of the top pharmaceutical importers in Kenya, we target different therapeutic
-        segments and market a comprehensive range of specialty pharmaceuticals customized to Kenya and East African
-        market. Our business includes import, distribution and marketing of Branded-Generics and Generics in East-Africa
-        and Sub-Saharan Africa.
+        Prunus Pharma is dedicated to providing high-quality pharmaceuticals at competitive prices. As one of Kenya’s
+        top pharmaceutical importers, we specialize in targeting diverse therapeutic segments and offering a
+        comprehensive range of specialty pharmaceuticals tailored for the Kenyan and East African markets.
         <br />
-        In Kenya, we have presence in high growth specialty formulations of Anti-Malarials, Anti-Biotics and Pain-Management.
-        We pride ourselves on excellent level of customer satisfaction and best in class distribution service. We are committed
-        to become the largest wholesaler of pharmaceuticals in Kenya and East-Africa.
+
+        Our business spans the import, distribution, and marketing of Branded-Generics and Generics across East Africa
+        and Sub-Saharan Africa. In Kenya, we focus on high-growth therapeutic areas, including Anti-Malarials,
+        Antibiotics, and Pain-Management formulations. We pride ourselves on being market leader in pessaries and
+        suppositories segment.
+        <br />
+
+        With an unwavering commitment to customer satisfaction and a robust pharmaceutical distribution network, Prunus
+        Pharma strives to become the largest pharma wholesaler in Kenya and East Africa. Explore reliable, high-quality
+        solutions for all your pharmaceutical and healthcare needs. Trust us for reliable, high-quality solutions in the
+        pharmaceutical industry.
       </p>
     </Fragment>
 
@@ -83,7 +101,104 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <Features
+  <Content
+    isReversed
+    id="looking for partners and partnership"
+    columns={3}
+    image={{
+      src: '~/assets/images/image about.jpg',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Seeking Global Partners for Product Distribution
+      </h3>
+      <p class="text-justify">
+        Prunus Pharma is actively looking for strategic partnerships with organizations interested in launching and
+        marketing their pharmaceutical products in Kenya. We are open to Licensing agreements, Marketing collaborations,
+        and long-term business partnerships to expand our product offerings.
+        <br />
+
+        Leveraging our established marketing expertise, Prunus Pharma aims to grow its therapeutic range by partnering
+        with manufacturers of high-quality pharmaceuticals, medical commodities, medical equipment, and diagnostics from
+        around the globe.
+        <br />
+
+        Join us in establishing a strong distribution network in Kenya and expanding the reach of your products.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Features3
+    id="Pharmaceutical Product Segments"
+    title="Product Segments"
+    subtitle="Fulfilling Pharmaceutical Needs In Kenya Since 2017"
+    columns={3}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: 'Anti-malarials',
+      },
+      {
+        title: 'Anti-infectives',
+      },
+      {
+        title: 'Gynaecology',
+      },
+      {
+        title: 'Paediatrics',
+      },
+      {
+        title: 'Psychiatry',
+      },
+      {
+        title: 'Neurology',
+      },
+      {
+        title: 'Cardiology',
+      },
+      {
+        title: 'Orthopaedics',
+      },
+      {
+        title: 'Diabetology',
+      },
+      {
+        title: 'Gastroenterology',
+      },
+      {
+        title: 'Ophthalmology',
+      },
+      {
+        title: 'Nephrology',
+      },
+      {
+        title: 'Urology',
+      },
+      {
+        title: 'Dermatology',
+      },
+      {
+        title: 'Respiratory care',
+      },
+      {
+        title: 'Oncology',
+      },
+      {
+        title: 'Dental care',
+      },
+      {
+        title: 'Nutritionals',
+      },
+    ]}
+  />
+
+  <!-- <Features
     id="features"
     tagline="Product Segment"
     title="Main Segments We Work With"
@@ -114,7 +229,7 @@ const metadata = {
         icon: 'tabler:bulb',
       },
     ]}
-  />
+  /> -->
 
   <!-- Content Widget **************** -->
 
@@ -158,6 +273,25 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+
+  <Content
+    tagline="Advantages of Working with Us"
+    title="Addtional Services we Offer"
+    items={[
+      { title: 'Recruitment of Field Force and Medical Representatives' },
+      { title: 'Strategy for product placement & go to market' },
+      { title: 'Warehousing and Inventory Management' },
+      { title: 'Regulatory Affairs' },
+      { title: 'Marketing and Promotion' },
+      { title: 'Training and Development' },
+      { title: 'Logistics and Distribution' },
+      { title: 'MRx: Online Medical Representatives detailing and reporting system' },
+    ]}
+    image={{
+      src: '~/assets/images/services.png',
+      alt: 'Colorful Image',
+    }}
+  />
 
   <!-- HighlightedPosts Widget ******* -->
 
